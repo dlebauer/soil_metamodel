@@ -46,11 +46,22 @@ We are deliberately recruiting a diverse group with skills in modeling and/or em
 
 ## Data
 
-## Software
+TBD: see Issue 1: https://github.com/dlebauer/soil_metamodel/issues/1
+
+## Software / Code
+
+* SoilR
+* STAN
+* Manuscripts with reproducible analyses 
+* New features in STAN, SoilR; new libraries / packages https://github.com/dlebauer/soil_metamodel/issues/6
 
 ## Manuscripts
 
+Propose manuscripts here: https://github.com/dlebauer/soil_metamodel/issues/6
+
 ## Proposals
+
+Propose Proposals here: https://github.com/dlebauer/soil_metamodel/issues/6
 
 # To participate
 
