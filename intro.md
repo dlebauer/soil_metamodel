@@ -62,6 +62,9 @@ We will know total carbon, e.g. C1 + C2 + ... CN, and its changes dCdt.
 
 We can not directly observe individual C pools, these pools are are not only 'unobserved', but 'unobservable' at this level of approximation of 1000s of compounds into fast, slow and versy slow decomposing ... it is difficult chemistry (cite / get input from Talbot, Allison).  Unlike the substrates in pharmacological reactions, these are an approximation that limits scientific inference (e.g. a better mechanistic understanding; these equations will be mostly 'abiotic'; though 'adding the biology' to these models is what everyone wants to figure out how to do, in a robust manner. But reality is that these compounds are not only diverse, but they exist and interact within a matrix of soil, water, goo, microbes, roots, invertebrates in a way that has thus far been impossible to make sense of in a way that will make useful predictions. i.e. the spread (60Gt/yr) across global models in the IPCC in predictions of global dC/dt is greater than the mean (30Gt/yr) (off the top of my head. cite Dave Moore, Yiqi Luo). 
 
+* Statistical treatment / EnKF: see Chena et al An improved state-parameter analysis of ecosystem
+models using data assimilation
+
 ### Soil Fractionation
 
 However, Jennifer referred to some data that she has that could be used to set priors on C1,C2,C3,
