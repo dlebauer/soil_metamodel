@@ -12,7 +12,9 @@ A key challenge of this inference will be sampling across models of varying comp
 ---
 
 
-### Unknown parameters
+## Models and Data
+
+### Unknown Parameters
 
 In that particular model (Sierra et al 2013, eqn 2), which are parameters are unknown? 
 
@@ -38,7 +40,9 @@ We want to estimate P(different soil C models) ~ f(temperature, moisture)
 
 dC/dt ~ some probability of each model, with heirarchical time dependent models on the vector of model probabilities
 
-> dcdt_model *  1:N multinomial( n_dcdt, k_dcdt, P(dcdt_model 1:N) ) 
+```
+dcdt_model *  1:N multinomial( n_dcdt, k_dcdt, P(dcdt_model 1:N) ) 
+```
 
  (PH, Clay, other factors are also very important ... but these relationships are less well understood ... )
 
@@ -49,7 +53,17 @@ We will know total carbon, e.g. C1 + C2 + ... CN. Individual C pools are not onl
 
 ### Soil Fractionation
 
-However, Jennifer referred to some data that she has that could be used to set priors on C1,C2,C3, i.e., C1 ~= 'stuff that floats on water", C2 ~= "stuff that floats on a dense liquid" and C3~= "stuff that does not float on either". 
+However, Jennifer referred to some data that she has that could be used to set priors on C1,C2,C3,
+
+What she might have is
+
+```
+C1 ~= 'stuff that floats on water"
+C2 ~= "stuff that floats on a dense liquid (~ 2g/ml how dense, in methods) "
+C3~= "stuff that does not float on either". 
+```
+
+... though there are other physical and chemical approaches, perhpas as many protocols as labs ... 
 
 ### Enzyme Activities
 
