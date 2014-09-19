@@ -1,4 +1,4 @@
-soil_metamodel
+Soil Meta-model
 ==============
 
 Repository for workshop on next-generation soil biogeochemistry modeling.
