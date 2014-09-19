@@ -20,7 +20,7 @@ A key challenge of this inference will be sampling across models of varying comp
 
 * temperature, moisture, litter inputs
 
-### Unknown Parameters
+### Unknown / Poorly constrained Parameters
 
 In that particular model (Sierra et al 2013, eqn 2), which are parameters are unknown? 
 
@@ -28,8 +28,10 @@ In that particular model (Sierra et al 2013, eqn 2), which are parameters are un
  * squiggle may have many different and unrelated functional forms and parameterizations
  * most letters other than T and M, many of the constants in Table 1 could be estimated, but we should narrow focus by stating some explicit hypotheses.  useful to estimate, e.g. as a function of time or ratios of pool sizes
 2. k, the decay rate, can be loosly related to enzyme activity data
+
 3. Ratio of C1:N, can be loosley related to (priors set based on) density fractionation (described below)
- * I think this ratio and the sum of pool sizes are 'states'
+ * I think this ratio and the sum of pool sizes are the system's key 'state variables'
+ * Parameters for model weight / skill
 
 ### I couldn't tell if it was the squiggle only or the squiggle and some of the other components. 
 
@@ -54,9 +56,11 @@ dcdt_model *  1:N multinomial( n_dcdt, k_dcdt, P(dcdt_model 1:N) )
  (PH, Clay, other factors are also very important ... but these relationships are less well understood ... )
 
 
-### Observinng Total Carbon, estimating pool sizes / distribution of fast, slow pools
+### State Parameters: Total Carbon, estimating pool sizes / distribution of fast, slow pools
 
-We will know total carbon, e.g. C1 + C2 + ... CN. Individual C pools are not only 'unobserved', but 'unobservable' at this approximation of 1000s of compounds into fast, slow and versy slow decomposing. Unlike the substrates in pharmacological reactions, these are an approximation that limits scientific inference (e.g. a better mechanistic understanding; these equations will be mostly 'abiotic'; though 'adding the biology' to these models is what everyone wants to figure out how to do, in a robust manner. But reality is that these compounds are not only diverse, but they exist and interact within a matrix of soil, water, goo, microbes, roots, invertebrates in a way that has thus far been impossible to make sense of in a way that will make useful predictions. i.e. the spread (60Gt/yr) across global models in the IPCC in predictions of global dC/dt is greater than the mean (30Gt/yr) (off the top of my head. cite Dave Moore, Yiqi Luo). 
+We will know total carbon, e.g. C1 + C2 + ... CN, and its changes dCdt. 
+
+We can not directly observe individual C pools, these pools are are not only 'unobserved', but 'unobservable' at this level of approximation of 1000s of compounds into fast, slow and versy slow decomposing ... it is difficult chemistry (cite / get input from Talbot, Allison).  Unlike the substrates in pharmacological reactions, these are an approximation that limits scientific inference (e.g. a better mechanistic understanding; these equations will be mostly 'abiotic'; though 'adding the biology' to these models is what everyone wants to figure out how to do, in a robust manner. But reality is that these compounds are not only diverse, but they exist and interact within a matrix of soil, water, goo, microbes, roots, invertebrates in a way that has thus far been impossible to make sense of in a way that will make useful predictions. i.e. the spread (60Gt/yr) across global models in the IPCC in predictions of global dC/dt is greater than the mean (30Gt/yr) (off the top of my head. cite Dave Moore, Yiqi Luo). 
 
 ### Soil Fractionation
 
