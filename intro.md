@@ -14,15 +14,22 @@ A key challenge of this inference will be sampling across models of varying comp
 
 ## Models and Data
 
+### Inputs ('Drivers')
+
+(Data)
+
+* temperature, moisture, litter inputs
+
 ### Unknown Parameters
 
 In that particular model (Sierra et al 2013, eqn 2), which are parameters are unknown? 
 
 1. squiggle = f(temperature, water, ...); 
  * squiggle may have many different and unrelated functional forms and parameterizations
- * most letters other than T and M, many of the constants in Table 1 
+ * most letters other than T and M, many of the constants in Table 1 could be estimated, but we should narrow focus by stating some explicit hypotheses.  useful to estimate, e.g. as a function of time or ratios of pool sizes
 2. k, the decay rate, can be loosly related to enzyme activity data
 3. Ratio of C1:N, can be loosley related to (priors set based on) density fractionation (described below)
+ * I think this ratio and the sum of pool sizes are 'states'
 
 ### I couldn't tell if it was the squiggle only or the squiggle and some of the other components. 
 
