@@ -1,7 +1,7 @@
 Development of a ‘super model’ approach: Application to soil carbon cycle models
 ==============
 
-** Lead organizers:**
+**Lead organizers:**
 
 * Kiona Ogle (Arizona State University), 
 * Jennifer Powers (University of Minnesota), 
