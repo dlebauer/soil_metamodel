@@ -8,3 +8,4 @@ This provides the opportunity to make advances in statistical computing as well 
 This suite of linear models have been implemented (e.g. in the SoilR package and in a set of C functions following Xia et al 2013), and should be straightforward too reimplement again if neither of these are suitable for integration into Stan, and in any case we will want to add models that are more complex to this (e.g. models that can not be decomposed (or at least no one has done this) into a matrix operation because there are two-way feedbacks among pools). 
 
 A key challenge of this inference will be sampling across models of varying complexity and parameters. 
+
